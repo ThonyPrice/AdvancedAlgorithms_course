@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+1<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -53,7 +53,7 @@
     <!-- </Grade box> -->
 
     <!-- <Assignments> -->
-    <div class="container">
+    <div class="container" onclick="updateGrade()">
       <div class="jumbotron">
         <div class="row">
           <div class="col-sm-6">
@@ -64,13 +64,11 @@
                 <li>To pass the course you should complete 2 assignments.</li>
                 <li>To pass a assignment you must solve 1 question in the assignment.</li>
                 <li>The assignments include 5-6 questions graded (A-E).</li>
+                <li><h3>Check your grades for the assignments --></h3></li>
               </ul>
             </p>
           </div>
           <div class="col-sm-6">
-            <i>
-              Check your grades for the assignments
-            </i>
             <div class="row" style="background-color:#cccccc;">
               <h3 style="padding-left: 15px;">
                 <br>
@@ -81,19 +79,19 @@
                   <label><input id="A-1-A" type="checkbox" value="A">A</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="B">B</label>
+                  <label><input id="A-1-B" type="checkbox" value="B">B</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="C">C</label>
+                  <label><input id="A-1-C" type="checkbox" value="C">C</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="D">D</label>
+                  <label><input id="A-1-D" type="checkbox" value="D">D</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="E" checked>E</label>
+                  <label><input id="A-1-E" type="checkbox" value="E" checked>E</label>
                 </div>
                 <div class="col-sm-2">
-                <label><input type="checkbox" value="F">F</label>
+                  <label><input id="A-1-F" type="checkbox" value="F">F</label>
                 </div>
                 <br>
               </div>
@@ -108,19 +106,19 @@
                   <label><input id="A-2-A" type="checkbox" value="A">A</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="B">B</label>
+                  <label><input id="A-2-B" type="checkbox" value="B">B</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="C">C</label>
+                  <label><input id="A-2-C" type="checkbox" value="C">C</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="D">D</label>
+                  <label><input id="A-2-D" type="checkbox" value="D">D</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="E" checked>E</label>
+                  <label><input id="A-2-E" type="checkbox" value="E" checked>E</label>
                 </div>
                 <div class="col-sm-2">
-                <label><input type="checkbox" value="F">F</label>
+                  <label><input id="A-2-F" type="checkbox" value="F">F</label>
                 </div>
                 <br>
               </div>
@@ -132,22 +130,22 @@
               </h3>
               <div class="checkbox">
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="A">A</label>
+                  <label><input id="A-3-A" type="checkbox" value="A">A</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="B">B</label>
+                  <label><input id="A-3-B" type="checkbox" value="B">B</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="C">C</label>
+                  <label><input id="A-3-C" type="checkbox" value="C">C</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="D">D</label>
+                  <label><input id="A-3-D" type="checkbox" value="D">D</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="E">E</label>
+                  <label><input id="A-3-E" type="checkbox" value="E">E</label>
                 </div>
                 <div class="col-sm-2">
-                <label><input type="checkbox" value="F" checked>F</label>
+                  <label><input id="A-3-F" type="checkbox" value="F" checked>F</label>
                 </div>
                 <br>
               </div>
@@ -159,22 +157,22 @@
               </h3>
               <div class="checkbox">
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="A">A</label>
+                  <label><input id="A-4-A" type="checkbox" value="A">A</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="B">B</label>
+                  <label><input id="A-4-B" type="checkbox" value="B">B</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="C">C</label>
+                  <label><input id="A-4-C" type="checkbox" value="C">C</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="D">D</label>
+                  <label><input id="A-4-D" type="checkbox" value="D">D</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="E">E</label>
+                  <label><input id="A-4-E" type="checkbox" value="E">E</label>
                 </div>
                 <div class="col-sm-2">
-                <label><input type="checkbox" value="F" checked>F</label>
+                  <label><input id="A-4-F" type="checkbox" value="F" checked>F</label>
                 </div>
               </div>
             </div>
@@ -185,7 +183,7 @@
     <!-- </Assignments> -->
 
     <!-- <Projects> -->
-    <div class="container">
+    <div class="container" onclick="updateGrade()">
       <div class="jumbotron">
         <div class="row">
           <div class="col-sm-6">
@@ -195,14 +193,11 @@
                 <li>The course include 2-3 projects.</li>
                 <li>To pass the course you should complete 1 project.</li>
                 <li>The projects are performed in groups of 2-4 students.</li>
+                <li><h3>Check your grades for the projects --></h3></li>
               </ul>
-              <i>Check your grades for the projects.</i>
             </p>
           </div>
           <div class="col-sm-6">
-            <i>
-              Check your grades for the projects
-            </i>
             <div class="row" style="background-color:#cccccc;">
               <h3 style="padding-left: 15px;">
                 <br>
@@ -213,19 +208,19 @@
                   <label><input id="P-1-A" type="checkbox" value="A">A</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="B">B</label>
+                  <label><input id="P-1-B" type="checkbox" value="B">B</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="C">C</label>
+                  <label><input id="P-1-C" type="checkbox" value="C">C</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="D">D</label>
+                  <label><input id="P-1-D" type="checkbox" value="D">D</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="E" checked>E</label>
+                  <label><input id="P-1-E" type="checkbox" value="E" checked>E</label>
                 </div>
                 <div class="col-sm-2">
-                <label><input type="checkbox" value="F">F</label>
+                  <label><input id="P-1-F" type="checkbox" value="F">F</label>
                 </div>
                 <br>
               </div>
@@ -237,22 +232,22 @@
               </h3>
               <div class="checkbox">
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="A">A</label>
+                  <label><input id="P-2-A" type="checkbox" value="A">A</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="B">B</label>
+                  <label><input id="P-2-B" type="checkbox" value="B">B</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="C">C</label>
+                  <label><input id="P-2-C" type="checkbox" value="C">C</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="D">D</label>
+                  <label><input id="P-2-D" type="checkbox" value="D">D</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="E" checked>E</label>
+                  <label><input id="P-2-E" type="checkbox" value="E" checked>E</label>
                 </div>
                 <div class="col-sm-2">
-                <label><input type="checkbox" value="F">F</label>
+                  <label><input id="P-2-F" type="checkbox" value="F">F</label>
                 </div>
                 <br>
               </div>
@@ -264,22 +259,22 @@
               </h3>
               <div class="checkbox">
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="A">A</label>
+                  <label><input id="P-3-A" type="checkbox" value="A">A</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="B">B</label>
+                  <label><input id="P-3-B" type="checkbox" value="B">B</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="C">C</label>
+                  <label><input id="P-3-C" type="checkbox" value="C">C</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="D">D</label>
+                  <label><input id="P-3-D" type="checkbox" value="D">D</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input type="checkbox" value="E">E</label>
+                  <label><input id="P-3-E" type="checkbox" value="E">E</label>
                 </div>
                 <div class="col-sm-2">
-                <label><input type="checkbox" value="F" checked>F</label>
+                  <label><input id="P-3-F" type="checkbox" value="F" checked>F</label>
                 </div>
                 <br>
               </div>
@@ -290,11 +285,21 @@
     </div>
     <!-- </Projects> -->
 
-
+    <!-- <Scripts> -->
     <script>
 
       document.onclick = updateGrade();
       document.body.addEventListener('click', updateGrade(), true);
+
+      var all_boxes_id = [
+        "A-1-A", "A-1-B", "A-1-C", "A-1-D", "A-1-E", "A-1-F",
+        "A-2-A", "A-2-B", "A-2-C", "A-2-D", "A-2-E", "A-2-F",
+        "A-3-A", "A-3-B", "A-3-C", "A-3-D", "A-3-E", "A-3-F",
+        "A-4-A", "A-4-B", "A-4-C", "A-4-D", "A-4-E", "A-4-F",
+        "P-1-A", "P-1-B", "P-1-C", "P-1-D", "P-1-E", "P-1-F",
+        "P-2-A", "P-2-B", "P-2-C", "P-2-D", "P-2-E", "P-2-F",
+        "P-3-A", "P-3-B", "P-3-C", "P-3-D", "P-3-E", "P-3-F"
+      ]
 
       function updateGrade() {
         var checkedValues = $('input:checkbox:checked').map(function() {
@@ -335,19 +340,30 @@
       }
 
       function check4grade(g) {
+        uncheckAll();
         d = {
-          "A" : ["A-1-A", "A-2-A", "P-1-A"]
+          "A" : ["A-1-A", "A-2-A", "P-1-A"],
+          "B" : ["A-1-A", "A-1-B", "P-1-B"],
+          "C" : ["A-1-C", "A-4-C", "P-1-B"],
+          "D" : ["A-1-D", "A-3-C", "P-1-D"],
+          "E" : ["A-1-A", "A-2-D", "P-2-E"],
         }
         boxes_to_check = d[g];
         console.log(boxes_to_check);
         for (var i=0; i<boxes_to_check.length; i++) {
-          document.getElementById(boxes_to_check[i]).click();
+          document.getElementById(boxes_to_check[i]).checked = true;
+        }
+        updateGrade();
+      }
 
+      function uncheckAll() {
+        for (var i=0; i<all_boxes_id.length; i++) {
+          document.getElementById(all_boxes_id[i]).checked = false;
         }
       }
 
     </script>
-
+    <!-- </Scripts> -->
 
   </body>
 </html>
