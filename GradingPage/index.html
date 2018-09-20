@@ -1,4 +1,4 @@
-1<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -18,23 +18,33 @@
       <div class="jumbotron">
         <h1>DD2440 Grading system</h1>
           <p>
-            Given that the first lecture comprised 40 minutes of explaining the
-            grading system of the course. A quick explonation and redirecting
+            Given that the first lecture comprised of 40 minutes explaining the
+            grading system of the course, I think this can be done more
+            efficiently. A quick explonation during lecture and redirecting
             the students to this page might speed up the process for upcoming
-            course rounds. It can perhaps also be useful to predict one's graded
-            during the course by selecting received and expected grades so far.
+            course offerings. It can perhaps also be useful to predict one's
+            grade during the course by selecting received, and expected grades so far.
+          </p>
+          <p>
+            Feel free to contribute to the page at
+            <a target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/ThonyPrice/AdvancedAlgorithms_course/tree/gh-pages/GradingPage">GitHub
+            </a>.
           </p>
       </div>
     </div>
     <!-- </Page header> -->
 
-    <!-- <Grade box> -->
-    <div class="container">
+
+    <div class="container" onclick="updateGrade()">
       <div class="jumbotron">
+      <!-- <Grade box> -->
         <div class="row">
           <h1>
             Expected grade = <span id="calc_grade"></span>
           </h1>
+          <font id="reminder" color="red"></font>
         </div>
         <div class="row">
           <div class="col-sm-12">
@@ -48,13 +58,9 @@
             <button type="button" class="btn btn-danger" onclick="check4grade('E')">E</button>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- </Grade box> -->
-
-    <!-- <Assignments> -->
-    <div class="container" onclick="updateGrade()">
-      <div class="jumbotron">
+      <!-- </Grade box> -->
+        <br>
+      <!-- <Assignments> -->
         <div class="row">
           <div class="col-sm-6">
             <h2>Assignments</h2>
@@ -76,22 +82,22 @@
               </h3>
               <div class="checkbox">
                 <div class="col-sm-2">
-                  <label><input id="A-1-A" type="checkbox" value="A">A</label>
+                  <label><input id="A-1-A" type="checkbox" value="A-1-A">A</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-1-B" type="checkbox" value="B">B</label>
+                  <label><input id="A-1-B" type="checkbox" value="A-1-B">B</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-1-C" type="checkbox" value="C">C</label>
+                  <label><input id="A-1-C" type="checkbox" value="A-1-C">C</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-1-D" type="checkbox" value="D">D</label>
+                  <label><input id="A-1-D" type="checkbox" value="A-1-D">D</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-1-E" type="checkbox" value="E" checked>E</label>
+                  <label><input id="A-1-E" type="checkbox" value="A-1-E" checked>E</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-1-F" type="checkbox" value="F">F</label>
+                  <label><input id="A-1-F" type="checkbox" value="A-1-F">F</label>
                 </div>
                 <br>
               </div>
@@ -103,22 +109,22 @@
               </h3>
               <div class="checkbox">
                 <div class="col-sm-2">
-                  <label><input id="A-2-A" type="checkbox" value="A">A</label>
+                  <label><input id="A-2-A" type="checkbox" value="A-2-A">A</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-2-B" type="checkbox" value="B">B</label>
+                  <label><input id="A-2-B" type="checkbox" value="A-2-B">B</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-2-C" type="checkbox" value="C">C</label>
+                  <label><input id="A-2-C" type="checkbox" value="A-2-C">C</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-2-D" type="checkbox" value="D">D</label>
+                  <label><input id="A-2-D" type="checkbox" value="A-2-D">D</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-2-E" type="checkbox" value="E" checked>E</label>
+                  <label><input id="A-2-E" type="checkbox" value="A-2-E" checked>E</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-2-F" type="checkbox" value="F">F</label>
+                  <label><input id="A-2-F" type="checkbox" value="A-2-F">F</label>
                 </div>
                 <br>
               </div>
@@ -130,22 +136,22 @@
               </h3>
               <div class="checkbox">
                 <div class="col-sm-2">
-                  <label><input id="A-3-A" type="checkbox" value="A">A</label>
+                  <label><input id="A-3-A" type="checkbox" value="A-3-A">A</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-3-B" type="checkbox" value="B">B</label>
+                  <label><input id="A-3-B" type="checkbox" value="A-3-B">B</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-3-C" type="checkbox" value="C">C</label>
+                  <label><input id="A-3-C" type="checkbox" value="A-3-C">C</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-3-D" type="checkbox" value="D">D</label>
+                  <label><input id="A-3-D" type="checkbox" value="A-3-D">D</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-3-E" type="checkbox" value="E">E</label>
+                  <label><input id="A-3-E" type="checkbox" value="A-3-E">E</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-3-F" type="checkbox" value="F" checked>F</label>
+                  <label><input id="A-3-F" type="checkbox" value="A-3-F" checked>F</label>
                 </div>
                 <br>
               </div>
@@ -157,34 +163,31 @@
               </h3>
               <div class="checkbox">
                 <div class="col-sm-2">
-                  <label><input id="A-4-A" type="checkbox" value="A">A</label>
+                  <label><input id="A-4-A" type="checkbox" value="A-4-A">A</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-4-B" type="checkbox" value="B">B</label>
+                  <label><input id="A-4-B" type="checkbox" value="A-4-B">B</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-4-C" type="checkbox" value="C">C</label>
+                  <label><input id="A-4-C" type="checkbox" value="A-4-C">C</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-4-D" type="checkbox" value="D">D</label>
+                  <label><input id="A-4-D" type="checkbox" value="A-4-D">D</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-4-E" type="checkbox" value="E">E</label>
+                  <label><input id="A-4-E" type="checkbox" value="A-4-E">E</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="A-4-F" type="checkbox" value="F" checked>F</label>
+                  <label><input id="A-4-F" type="checkbox" value="A-4-F" checked>F</label>
                 </div>
+                <br>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- </Assignments> -->
-
-    <!-- <Projects> -->
-    <div class="container" onclick="updateGrade()">
-      <div class="jumbotron">
+      <!-- </Assignments> -->
+        <br>
+      <!-- <Projects> -->
         <div class="row">
           <div class="col-sm-6">
             <h2>Projects</h2>
@@ -205,22 +208,22 @@
               </h3>
               <div class="checkbox">
                 <div class="col-sm-2">
-                  <label><input id="P-1-A" type="checkbox" value="A">A</label>
+                  <label><input id="P-1-A" type="checkbox" value="P-1-A">A</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="P-1-B" type="checkbox" value="B">B</label>
+                  <label><input id="P-1-B" type="checkbox" value="P-1-B">B</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="P-1-C" type="checkbox" value="C">C</label>
+                  <label><input id="P-1-C" type="checkbox" value="P-1-C">C</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="P-1-D" type="checkbox" value="D">D</label>
+                  <label><input id="P-1-D" type="checkbox" value="P-1-D">D</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="P-1-E" type="checkbox" value="E" checked>E</label>
+                  <label><input id="P-1-E" type="checkbox" value="P-1-E" checked>E</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="P-1-F" type="checkbox" value="F">F</label>
+                  <label><input id="P-1-F" type="checkbox" value="P-1-F">F</label>
                 </div>
                 <br>
               </div>
@@ -232,22 +235,22 @@
               </h3>
               <div class="checkbox">
                 <div class="col-sm-2">
-                  <label><input id="P-2-A" type="checkbox" value="A">A</label>
+                  <label><input id="P-2-A" type="checkbox" value="P-2-A">A</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="P-2-B" type="checkbox" value="B">B</label>
+                  <label><input id="P-2-B" type="checkbox" value="P-2-B">B</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="P-2-C" type="checkbox" value="C">C</label>
+                  <label><input id="P-2-C" type="checkbox" value="P-2-C">C</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="P-2-D" type="checkbox" value="D">D</label>
+                  <label><input id="P-2-D" type="checkbox" value="P-2-D">D</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="P-2-E" type="checkbox" value="E" checked>E</label>
+                  <label><input id="P-2-E" type="checkbox" value="P-2-E" checked>E</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="P-2-F" type="checkbox" value="F">F</label>
+                  <label><input id="P-2-F" type="checkbox" value="P-2-F">F</label>
                 </div>
                 <br>
               </div>
@@ -259,22 +262,22 @@
               </h3>
               <div class="checkbox">
                 <div class="col-sm-2">
-                  <label><input id="P-3-A" type="checkbox" value="A">A</label>
+                  <label><input id="P-3-A" type="checkbox" value="P-3-A">A</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="P-3-B" type="checkbox" value="B">B</label>
+                  <label><input id="P-3-B" type="checkbox" value="P-3-B">B</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="P-3-C" type="checkbox" value="C">C</label>
+                  <label><input id="P-3-C" type="checkbox" value="P-3-C">C</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="P-3-D" type="checkbox" value="D">D</label>
+                  <label><input id="P-3-D" type="checkbox" value="P-3-D">D</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="P-3-E" type="checkbox" value="E">E</label>
+                  <label><input id="P-3-E" type="checkbox" value="P-3-E">E</label>
                 </div>
                 <div class="col-sm-2">
-                  <label><input id="P-3-F" type="checkbox" value="F" checked>F</label>
+                  <label><input id="P-3-F" type="checkbox" value="P-3-F" checked>F</label>
                 </div>
                 <br>
               </div>
@@ -282,15 +285,17 @@
           </div>
         </div>
       </div>
+      <!-- </Projects> -->
     </div>
-    <!-- </Projects> -->
 
     <!-- <Scripts> -->
     <script>
 
+      // Update grade when user click
       document.onclick = updateGrade();
       document.body.addEventListener('click', updateGrade(), true);
-
+      // Identification of all checkboxes
+      // Syntax: "[A(ssignment)|P(roject)]-[Number]-[Grade]"
       var all_boxes_id = [
         "A-1-A", "A-1-B", "A-1-C", "A-1-D", "A-1-E", "A-1-F",
         "A-2-A", "A-2-B", "A-2-C", "A-2-D", "A-2-E", "A-2-F",
@@ -302,41 +307,65 @@
       ]
 
       function updateGrade() {
-        var checkedValues = $('input:checkbox:checked').map(function() {
-            console.log(this.id)
+        // Collect values of checked boxes
+        var checked_values = $('input:checkbox:checked').map(function() {
             return this.value;
         }).get();
 
         var possible_grades = ["A", "B", "C", "D", "E", "F"];
-        var current_grades = {};
-        for (i=0; i<possible_grades.length; i++) {
-          current_grades[possible_grades[i]] = 0;
+        var checked_grades = {};
+        var performed_tasks = {
+          "A" : {"1": 0, "2": 0, "3": 0, "4": 0},
+          "P" : {"1": 0, "2": 0, "3": 0}
         };
-        for (i=0; i<checkedValues.length; i++) {
-          current_grades[checkedValues[i]]++;
+        // Initialize current_grades dictionary
+        for (i=0; i<possible_grades.length; i++) {
+          checked_grades[possible_grades[i]] = 0;
+        };
+        // Transer values of checked data to checked_grades and performed_tasks
+        for (i=0; i<checked_values.length; i++) {
+          var tokens = checked_values[i].split("-");
+          task = tokens[0];
+          num = tokens[1];
+          grade = tokens[2];
+          checked_grades[grade]++;
+          if (grade != "F") {
+            performed_tasks[task][num] = 1;
+          }
         }
-        console.log(current_grades);
-
-        var high_grade_counter = 0;
+        // Update grade from collected data
+        var high_grade_counter = 0; // A, A, B -> C i.e. must track higher grades
         var grade_changed = false;
         for (i=0; i<possible_grades.length; i++) {
-          if (current_grades[possible_grades[i]] >= 3
-              || current_grades[possible_grades[i]] + high_grade_counter >= 3) {
+          if (checked_grades[possible_grades[i]] + high_grade_counter >= 3
+              && satisfiedTasks(performed_tasks)) {
             changeGrade(possible_grades[i]);
             grade_changed = true;
             break;
           } else {
-            high_grade_counter += current_grades[possible_grades[i]];
+            high_grade_counter += checked_grades[possible_grades[i]];
           };
         };
         if (!grade_changed) {
           changeGrade("F");
         }
-
       }
 
       function changeGrade(g) {
         document.getElementById('calc_grade').innerHTML = g;
+      }
+
+      function satisfiedTasks(tasks) {
+        a_score = Object.values(tasks["A"]).reduce((a, b) => a + b, 0);
+        p_score = Object.values(tasks["P"]).reduce((a, b) => a + b, 0);
+        if (a_score >= 2 && p_score >= 1) {
+          document.getElementById("reminder").innerHTML = "";
+          return true
+        } else {
+          document.getElementById("reminder").innerHTML =
+            "<h2>Remember! You must complete at least 2 assignments and 1 project.</h2>";
+          return false;
+        }
       }
 
       function check4grade(g) {
@@ -346,7 +375,7 @@
           "B" : ["A-1-A", "A-1-B", "P-1-B"],
           "C" : ["A-1-C", "A-4-C", "P-1-B"],
           "D" : ["A-1-D", "A-3-C", "P-1-D"],
-          "E" : ["A-1-A", "A-2-D", "P-2-E"],
+          "E" : ["A-1-A", "A-2-D", "P-2-E"]
         }
         boxes_to_check = d[g];
         console.log(boxes_to_check);
