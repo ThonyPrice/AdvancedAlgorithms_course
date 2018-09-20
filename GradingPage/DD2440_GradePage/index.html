@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Avalg Grading</title>
+  </head>
+
+  <body>
+
+    <!-- </Page header> -->
+    <div class="container">
+      <div class="jumbotron">
+        <h1>DD2440 Grading system</h1>
+          <p>
+            Given that the first lecture comprised 40 minutes of explaining the
+            grading system of the course. A quick explonation and redirecting
+            the students to this page might speed up the process for upcoming
+            course rounds. It can perhaps also be useful to predict one's graded
+            during the course by selecting received and expected grades so far.
+          </p>
+      </div>
+    </div>
+    <!-- </Page header> -->
+
+    <!-- <Grade box> -->
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <h1>
+            Expected grade = <span id="calc_grade"></span>
+          </h1>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <p>
+              Click a grade to preview an example of how it can be achived
+            </p>
+            <button type="button" class="btn btn-primary" onclick="check4grade('A')">A</button>
+            <button type="button" class="btn btn-success" onclick="check4grade('B')">B</button>
+            <button type="button" class="btn btn-info" onclick="check4grade('C')">C</button>
+            <button type="button" class="btn btn-warning" onclick="check4grade('D')">D</button>
+            <button type="button" class="btn btn-danger" onclick="check4grade('E')">E</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </Grade box> -->
+
+    <!-- <Assignments> -->
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2>Assignments</h2>
+            <p>
+              <ul>
+                <li>The course include 3 assignments + 1 make up assignment.</li>
+                <li>To pass the course you should complete 2 assignments.</li>
+                <li>To pass a assignment you must solve 1 question in the assignment.</li>
+                <li>The assignments include 5-6 questions graded (A-E).</li>
+              </ul>
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <i>
+              Check your grades for the assignments
+            </i>
+            <div class="row" style="background-color:#cccccc;">
+              <h3 style="padding-left: 15px;">
+                <br>
+                Assignment 1
+              </h3>
+              <div class="checkbox">
+                <div class="col-sm-2">
+                  <label><input id="A-1-A" type="checkbox" value="A">A</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="B">B</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="C">C</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="D">D</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="E" checked>E</label>
+                </div>
+                <div class="col-sm-2">
+                <label><input type="checkbox" value="F">F</label>
+                </div>
+                <br>
+              </div>
+            </div>
+            <div class="row" style="background-color:#e6e6e6;">
+              <h3 style="padding-left: 15px;">
+                <br>
+                Assignment 2
+              </h3>
+              <div class="checkbox">
+                <div class="col-sm-2">
+                  <label><input id="A-2-A" type="checkbox" value="A">A</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="B">B</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="C">C</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="D">D</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="E" checked>E</label>
+                </div>
+                <div class="col-sm-2">
+                <label><input type="checkbox" value="F">F</label>
+                </div>
+                <br>
+              </div>
+            </div>
+            <div class="row" style="background-color:#cccccc;">
+              <h3 style="padding-left: 15px;">
+                <br>
+                Assignment 3
+              </h3>
+              <div class="checkbox">
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="A">A</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="B">B</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="C">C</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="D">D</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="E">E</label>
+                </div>
+                <div class="col-sm-2">
+                <label><input type="checkbox" value="F" checked>F</label>
+                </div>
+                <br>
+              </div>
+            </div>
+            <div class="row" style="background-color:#e6e6e6;">
+              <h3 style="padding-left: 15px;">
+                <br>
+                Assignment 4 (Optional*)
+              </h3>
+              <div class="checkbox">
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="A">A</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="B">B</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="C">C</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="D">D</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="E">E</label>
+                </div>
+                <div class="col-sm-2">
+                <label><input type="checkbox" value="F" checked>F</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </Assignments> -->
+
+    <!-- <Projects> -->
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2>Projects</h2>
+            <p>
+              <ul>
+                <li>The course include 2-3 projects.</li>
+                <li>To pass the course you should complete 1 project.</li>
+                <li>The projects are performed in groups of 2-4 students.</li>
+              </ul>
+              <i>Check your grades for the projects.</i>
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <i>
+              Check your grades for the projects
+            </i>
+            <div class="row" style="background-color:#cccccc;">
+              <h3 style="padding-left: 15px;">
+                <br>
+                Project 1
+              </h3>
+              <div class="checkbox">
+                <div class="col-sm-2">
+                  <label><input id="P-1-A" type="checkbox" value="A">A</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="B">B</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="C">C</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="D">D</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="E" checked>E</label>
+                </div>
+                <div class="col-sm-2">
+                <label><input type="checkbox" value="F">F</label>
+                </div>
+                <br>
+              </div>
+            </div>
+            <div class="row" style="background-color:#e6e6e6;">
+              <h3 style="padding-left: 15px;">
+                <br>
+                Project 2
+              </h3>
+              <div class="checkbox">
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="A">A</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="B">B</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="C">C</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="D">D</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="E" checked>E</label>
+                </div>
+                <div class="col-sm-2">
+                <label><input type="checkbox" value="F">F</label>
+                </div>
+                <br>
+              </div>
+            </div>
+            <div class="row" style="background-color:#cccccc;">
+              <h3 style="padding-left: 15px;">
+                <br>
+                Project 3 (Optional*)
+              </h3>
+              <div class="checkbox">
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="A">A</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="B">B</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="C">C</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="D">D</label>
+                </div>
+                <div class="col-sm-2">
+                  <label><input type="checkbox" value="E">E</label>
+                </div>
+                <div class="col-sm-2">
+                <label><input type="checkbox" value="F" checked>F</label>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </Projects> -->
+
+
+    <script>
+
+      document.onclick = updateGrade();
+      document.body.addEventListener('click', updateGrade(), true);
+
+      function updateGrade() {
+        var checkedValues = $('input:checkbox:checked').map(function() {
+            console.log(this.id)
+            return this.value;
+        }).get();
+
+        var possible_grades = ["A", "B", "C", "D", "E", "F"];
+        var current_grades = {};
+        for (i=0; i<possible_grades.length; i++) {
+          current_grades[possible_grades[i]] = 0;
+        };
+        for (i=0; i<checkedValues.length; i++) {
+          current_grades[checkedValues[i]]++;
+        }
+        console.log(current_grades);
+
+        var high_grade_counter = 0;
+        var grade_changed = false;
+        for (i=0; i<possible_grades.length; i++) {
+          if (current_grades[possible_grades[i]] >= 3
+              || current_grades[possible_grades[i]] + high_grade_counter >= 3) {
+            changeGrade(possible_grades[i]);
+            grade_changed = true;
+            break;
+          } else {
+            high_grade_counter += current_grades[possible_grades[i]];
+          };
+        };
+        if (!grade_changed) {
+          changeGrade("F");
+        }
+
+      }
+
+      function changeGrade(g) {
+        document.getElementById('calc_grade').innerHTML = g;
+      }
+
+      function check4grade(g) {
+        d = {
+          "A" : ["A-1-A", "A-2-A", "P-1-A"]
+        }
+        boxes_to_check = d[g];
+        console.log(boxes_to_check);
+        for (var i=0; i<boxes_to_check.length; i++) {
+          document.getElementById(boxes_to_check[i]).click();
+
+        }
+      }
+
+    </script>
+
+
+  </body>
+</html>
